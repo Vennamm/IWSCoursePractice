@@ -1,0 +1,13 @@
+#dropdown section div {
+	display: none;
+}
+
+#dropdown section a {
+	color:black;
+	text-decoration:none;
+}
+
+#dropdown section:target div{
+	display: block;
+	font-size: 12px;
+}	
