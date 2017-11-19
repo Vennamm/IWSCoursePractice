@@ -1,0 +1,16 @@
+body{
+    font-family:'Open Sans';
+    background-color: skyblue;
+    font-variant: normal;
+}
+
+h1{
+    font-variant:small-caps;
+    font-weight: 700;
+    color:black;
+}
+
+
+p {
+    text-decoration: none;
+}
