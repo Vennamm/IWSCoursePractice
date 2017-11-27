@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="labsheet4.css">
+    <script type="text/javascript" src="labsheet4.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+
+      <!-- Static navbar -->
+      <nav class="navbar navbar-invert">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Bootstrap</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+            <!--class="active" add this to make element active-->
+              <li><a href="#" onclick="return Fruits();">Fruits</a></li>
+              <li><a href="#" onclick="return Bakery();">Bakery</a></li>
+              <li><a href="#" onclick="return Baby();">Baby Items</a></li>
+              <li><a href="#" onclick="return Baking();">Baking</a></li>
+              <li><a href="#" onclick="return Frozen();">Frozen Foods</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#" onclick="cartt()">Cart</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+    </div>
+    <div class = "unhidden" id="rowe">
+    <div class="container">
+    <div class="row">
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="http://clipartix.com/wp-content/uploads/2016/04/Pineapple-images-free-pictures-download-clip-art.png" alt="Pineapple" id="img1">
+      <div class="caption">
+        <h3 class="product" id="name1">Pineapple</h3>
+        <p>Amet nostrud cupidatat ne se nulla consequat. Se quem o amet, aute cernantur familiaritatem, quid 
+              arbitror est cernantur ad est mentitum instituendarum. Quo magna dolore minim excepteur, ullamco 
+              legam et appellat coniunctione. Mandaremus varias si doctrina domesticarum ut cupidatat nam 
+              occaecat.</p>
+        <button href="#" type="button" class= "btn btn-primary" onclick='add("name1","first")' value="25" id="first" data-toggle="popover" title="Click to Add" data-content="Price = 25">Add to Cart</button><!--<p id="price1">Price = </p>-->
+      </div>
+    </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="http://pngimg.com/uploads/watermelon/watermelon_PNG2654.png" alt="Water Melon" id="img2">
+      <div class="caption">
+        <h3 class="product" id="name2">Water Melon</h3>
+          <p>Amet nostrud cupidatat ne se nulla consequat. Se quem o amet, aute cernantur familiaritatem, quid 
+              arbitror est cernantur ad est mentitum instituendarum. Quo magna dolore minim excepteur, ullamco 
+              legam et appellat coniunctione. Mandaremus varias si doctrina domesticarum ut cupidatat nam 
+              occaecat.</p>
+        <button href="#" type="button" class= "btn btn-primary" onclick='add("name2","second")' value="26" id="second" data-toggle="popover" title="Click to Add" data-content="Price = 26">Add to Cart</button>
+      </div>
+    </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="https://www.bforball.com/image/categ/mango.png" alt="Mango" id="img3">
+      <div class="caption">
+        <h3 class="product" id="name3">Mango</h3>
+        <p>Amet nostrud cupidatat ne se nulla consequat. Se quem o amet, aute cernantur familiaritatem, quid 
+              arbitror est cernantur ad est mentitum instituendarum. Quo magna dolore minim excepteur, ullamco 
+              legam et appellat coniunctione. Mandaremus varias si doctrina domesticarum ut cupidatat nam 
+              occaecat.</p>
+        <button href="#" type="button" class= "btn btn-primary" onclick='add("name3","third")' value="27" id="third" data-toggle="popover" title="Click to Add" data-content="Price = 27">Add to Cart</button>
+      </div>
+    </div>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="https://static1.squarespace.com/static/55359ac0e4b0a48fd270d2fa/t/5546f310e4b015ca719c53fd/1430713111513/" alt="Peach" id="img4">
+      <div class="caption">
+        <h3 class="product" id="name4">Peach</h3>
+        <p>Amet nostrud cupidatat ne se nulla consequat. Se quem o amet, aute cernantur familiaritatem, quid 
+              arbitror est cernantur ad est mentitum instituendarum. Quo magna dolore minim excepteur, ullamco 
+              legam et appellat coniunctione. Mandaremus varias si doctrina domesticarum ut cupidatat nam 
+              occaecat.</p>
+        <button href="#" type="button" class= "btn btn-primary" onclick='add("name4","fourth")' value="28" id="fourth" data-toggle="popover" title="Click to Add" data-content="Price = 28">Add to Cart</button>
+      </div>
+    </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="http://www.pngmart.com/files/1/Banana-Clip-Art-Free-PNG.png" alt="Banana" id="img5">
+      <div class="caption">
+        <h3 class="product" id="name5">Banana</h3>
+        <p>Amet nostrud cupidatat ne se nulla consequat. Se quem o amet, aute cernantur familiaritatem, quid 
+              arbitror est cernantur ad est mentitum instituendarum. Quo magna dolore minim excepteur, ullamco 
+              legam et appellat coniunctione. Mandaremus varias si doctrina domesticarum ut cupidatat nam 
+              occaecat.</p>
+        <button href="#" type="button" class= "btn btn-primary" onclick='add("name5","fifth")' value="29" id="fifth" data-toggle="popover" title="Click to Add" data-content="Price = 29">Add to Cart</button>
+      </div>
+    </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="https://www.picpng.com/image/view/25178" alt="Apple" id="img6">
+      <div class="caption" >
+        <h3 class="product" id="name6">Apple</h3>
+        <p>Amet nostrud cupidatat ne se nulla consequat. Se quem o amet, aute cernantur familiaritatem, quid 
+              arbitror est cernantur ad est mentitum instituendarum. Quo magna dolore minim excepteur, ullamco 
+              legam et appellat coniunctione. Mandaremus varias si doctrina domesticarum ut cupidatat nam 
+              occaecat.</p>
+        <button href="#" type="button" class= "btn btn-primary" onclick='add("name6","sixth")' value="30" id="sixth" data-toggle="popover" title="Click to Add" data-content="Price = 30">Add to Cart</button>
+      </div>
+    </div>
+        </div>
+        </div>
+    </div> <!-- /container -->
+    </div>
+    <div id="costs" class="tables"></div>
+
+</body>
+</html>
