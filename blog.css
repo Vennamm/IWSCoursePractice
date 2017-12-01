@@ -16,7 +16,7 @@ aside{
     float:right;
     width: 25%;
     background-color: aliceblue;
-}
+}   
 
 a{
     color:black;
@@ -51,4 +51,8 @@ article {
 nav {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 10px;
+}
+section{
+    float: left;
+    max-width: 74%;
 }
