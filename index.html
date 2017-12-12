@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <title>Project Mainpage</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <script type="text/javascript" src="js.js"></script>
+</head>
+<body>
+<section>
+<!--link used:https://v4-alpha.getbootstrap.com/components/navs/-->
+ <!-- Nav tabs -->
+<ul class="nav nav-tabs" id ="category" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" href="#a" role="tab">A</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#b" role="tab">B</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#c" role="tab">C</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#d" role="tab">D</a>
+  </li>
+  <li><a class="nav-link" data-toggle="tab" href="#e" role="tab">E</a></li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane active" id="a" role="tabpanel"></div>
+  <div class="tab-pane" id="b" role="tabpanel"></div>
+  <div class="tab-pane" id="c" role="tabpanel"></div>
+  <div class="tab-pane" id="d" role="tabpanel"></div>
+  <div class="tab-pane" id="e" role="tabpanel"></div>
+</div>
+ </section>  
+<!--modal form for addcard w3schools-->
+<div class="modal fade" id="modalopen" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4>Give values</h4>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <input type="text" class="form-control" id="prodname" placeholder="Enter name of product">
+                    <input type="number" class="form-control" id="prodval" placeholder="Enter price">
+                    <button type="button" onclick="addcard()" class="btn btn-success"><span class="glyphicon glyphicon-plus"></span>Add</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--cart modal-->
+<div class="modal fade" id="modalopen2" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4>Cart</h4>
+            </div>
+            <div class="modal-body">
+                <div class= "row">
+                    <div class="col-xs-4">
+                        <h4>Product Name</h4>
+                    </div>
+                    <div class="col-xs-4">
+                        <h4>Product Value</h4>
+                    </div>
+                    <div class="col-xs-4">
+                        <h4>Product Count</h4>
+                    </div>
+                </div>
+                <hr>
+                <div id="products"></div>
+                <hr>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <h3>Total</h3>
+                    </div>
+                    <div class="col-xs-6">
+                        <h3 id="total"></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<footer>
+<ul class="waydownbelow">
+    <li><button class="btn btn-primary" type="button"onclick="addnew()">Add New Category</button></li>
+    <li><button class="btn btn-primary" type="button"id="btnmodal">Add New Product</button></li>
+    <li><button class="btn btn-primary" type="button"id="btnmodal2">Cart</button></li>
+</ul>       
+</footer>
+</body>
+</html>
